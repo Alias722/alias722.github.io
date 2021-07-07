@@ -1,14 +1,14 @@
-@import 'libs/vars';
-@import 'libs/functions';
-@import 'libs/mixins';
-@import 'libs/vendor';
-@import 'libs/breakpoints';
-@import 'libs/html-grid';
+@import 'public/assets/sass/libs/vars';
+@import 'public/assets/sass/libs/functions';
+@import 'public/assets/sass/libs/mixins';
+@import 'public/assets/sass/libs/vendor';
+@import 'public/assets/sass/libs/breakpoints';
+@import 'public/assets/sass/libs/html-grid';
 @import 'fontawesome-all.min.css';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic');
 
 /*
-	Editorial by HTML5 UP
+	Solid State by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -16,47 +16,41 @@
 // Breakpoints.
 
 	@include breakpoints((
-		xlarge:   ( 1281px,  1680px ),
-		large:    ( 981px,   1280px ),
-		medium:   ( 737px,   980px  ),
-		small:    ( 481px,   736px  ),
-		xsmall:   ( 361px,   480px  ),
-		xxsmall:  ( null,    360px  ),
-		xlarge-to-max:    '(min-width: 1681px)',
-		small-to-xlarge:  '(min-width: 481px) and (max-width: 1680px)'
+		xlarge:    (1281px,   1680px   ),
+		large:     (981px,    1280px   ),
+		medium:    (737px,    980px    ),
+		small:     (481px,    736px    ),
+		xsmall:    (361px,    480px    ),
+		xxsmall:   (null,     360px    )
 	));
 
 // Base.
 
-	@import 'base/reset';
-	@import 'base/page';
-	@import 'base/typography';
+	@import 'public/assets/sass/base/reset';
+	@import 'public/assets/sass/base/page';
+	@import 'public/assets/sass/base/typography';
 
 // Component.
 
-	@import 'components/row';
-	@import 'components/section';
-	@import 'components/form';
-	@import 'components/box';
-	@import 'components/icon';
-	@import 'components/image';
-	@import 'components/list';
-	@import 'components/actions';
-	@import 'components/icons';
-	@import 'components/contact';
-	@import 'components/pagination';
-	@import 'components/table';
-	@import 'components/button';
-	@import 'components/mini-posts';
-	@import 'components/features';
-	@import 'components/posts';
+	@import 'public/assets/sass/components/row';
+	@import 'public/assets/sass/components/section';
+	@import 'public/assets/sass/components/form';
+	@import 'public/assets/sass/components/box';
+	@import 'public/assets/sass/components/icon';
+	@import 'public/assets/sass/components/image';
+	@import 'public/assets/sass/components/list';
+	@import 'public/assets/sass/components/actions';
+	@import 'public/assets/sass/components/icons';
+	@import 'public/assets/sass/components/contact';
+	@import 'public/assets/sass/components/pagination';
+	@import 'public/assets/sass/components/table';
+	@import 'public/assets/sass/components/button';
+	@import 'public/assets/sass/components/features';
 
 // Layout.
 
-	@import 'layout/wrapper';
-	@import 'layout/main';
-	@import 'layout/sidebar';
-	@import 'layout/header';
-	@import 'layout/banner';
-	@import 'layout/footer';
-	@import 'layout/menu';
+	@import 'public/assets/sass/layout/header';
+	@import 'public/assets/sass/layout/menu';
+	@import 'public/assets/sass/layout/banner';
+	@import 'public/assets/sass/layout/wrapper';
+	@import 'public/assets/sass/layout/footer';
