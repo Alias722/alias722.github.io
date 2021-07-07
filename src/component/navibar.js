@@ -1,18 +1,20 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default function Navibar(){
+    const menuStyle={
+        "overflow": 'visible'
+    }
     return(
-        <nav id="menu">
+        <nav id="menu" style={menuStyle}>
             <div className="inner">
                 <h2>Menu</h2>
                 <ul className="links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="generic.html">Generic</a></li>
-                    <li><a href="elements.html">Elements</a></li>
-                    <li><a href="#">Log In</a></li>
-                    <li><a href="#">Sign Up</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="generic">Generic</Link></li>
+                    <li><Link to="elements">Elements</Link></li>
                 </ul>
-                <a href="#" className="close">Close</a>
+                <Link className="close">Close</Link>
             </div>
         </nav>
     )

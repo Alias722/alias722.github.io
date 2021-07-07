@@ -8,7 +8,7 @@ export default function Spotlight1(props){
                 <div className="content">
                     <h2 className="major">{props.title}</h2>
                     <p>{props.context}</p>
-                    <a href={props.link} className="special" rel="noreferrer noopener">Learn more</a>
+                    <a href={props.link} className="special" rel="noreferrer noopener" target='_blank'>Learn more</a>
                 </div>
             </div>
         </section>

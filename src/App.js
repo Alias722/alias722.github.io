@@ -6,12 +6,16 @@ import {
 } from 'react-router-dom'
 
 import Home from './pages/homepage'
+import Blogger from './pages/blogger'
+import NotFound from './pages/notfound'
 
 function App() {
   return (
       <BrowserRouter basename={'/'} forceRefresh={true}>
         <Switch>
-            <Route path={"/"} component={Home} />
+            <Route exact path={"/"} component={Home} />
+            <Route path={"/posts"} component={Blogger}/>
+            <Route path={"/:param"} component={NotFound}/>
         </Switch>
       </BrowserRouter>
   );
