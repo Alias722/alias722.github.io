@@ -21,8 +21,7 @@ import Header from "./component/header";
 function App() {
     return (
         <React.Fragment>
-
-            <BrowserRouter basename={'/'} forceRefresh={true}>
+            <BrowserRouter basename={process.env.PUBLIC_URL} forceRefresh={true}>
                 <Header/>
                 <div id="page-wrapper">
                     <Switch>
