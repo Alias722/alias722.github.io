@@ -28,7 +28,7 @@ jobs:
           git config --global user.name $user_name
           git config --global user.email $user_email
           git remote set-url origin https://milliax:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          npm npm build
+          npm run build
           cp build/index.html build/404.html
           npx gh-pages -d build
         env:
