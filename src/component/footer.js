@@ -7,7 +7,7 @@ export default function Footer(props){
 
     const Send = async ()=>{
         try{
-            const query = `&entry.1105467687=${name}&entry.2133051960=${email}&entry.788216262=${comment}&submit=SUBMIT`;
+            const query = `&entry.1105467687=${name}&entry.2133051960=${email}&entry.788216262=${comment}&entry.996384014=${window.location.href}&submit=SUBMIT`;
             const googleForm = `https://docs.google.com/forms/d/e/1FAIpQLSdY8rCNTc06qRgXKI2-CHwpBWG1pgUj4un6u8hCnKVZaeZ66g/formResponse`
             const url = encodeURI(`${googleForm}?${query}`)
             await fetch(url,{
@@ -32,15 +32,15 @@ export default function Footer(props){
                     <div className="fields">
                         <div className="field">
                             <label htmlFor="name">Name</label>
-                            <input type="text" value={name} onChange={e=>{setName(e.target.value)}}/>
+                            <input type="text" value={name} onChange={e=>{setName(e.target.value)}} required/>
                         </div>
                         <div className="field">
                             <label htmlFor="email">Email</label>
-                            <input type="email" value={email} onChange={e=>{setEmail(e.target.value)}}/>
+                            <input type="email" value={email} onChange={e=>{setEmail(e.target.value)}} required/>
                         </div>
                         <div className="field">
                             <label htmlFor="message">Message</label>
-                            <textarea rows="4" value={comment} onChange={e=>{setComment(e.target.value)}}/>
+                            <textarea rows="4" value={comment} onChange={e=>{setComment(e.target.value)}} required/>
                         </div>
                     </div>
                     <ul className="actions">

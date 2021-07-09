@@ -41,7 +41,7 @@ export default function ListTutorial(props) {
                         <section className="features">
                             {focusData.map(data=>{
                                 return(
-                                    <Focus picture={"images/pic04.jpg"}
+                                    <Focus picture={"https://raw.sivir.pw/public/images/pic04.jpg"}
                                            title={data.title}
                                            context={data.context}
                                            request={`tutorial/${data.link}`} />
